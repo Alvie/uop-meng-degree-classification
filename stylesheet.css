@@ -17,6 +17,9 @@ h2, h3 {
     padding: 0px;
 }
 
+p {
+    margin: 0.2em 0;
+}
 .marks-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -41,16 +44,49 @@ h2, h3 {
     grid-gap: 0.5rem;
 }
 
-.module-score, .rule-container {
+.rules-and-classifications {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.module-score, .rule-container, .classification-container {
     display: grid;
-    grid-template-columns: 5rem 1fr;
     grid-gap: 1rem;
+}
+
+.module-score {
+    grid-template-columns: 6rem 1fr;
+}
+
+.rule-container, .classification-container {
+    grid-template-columns: 12rem 1fr;
+}
+
+.rule-text {
+    font-weight: bold;
+}
+
+.rule-a-percentage, .rule-b-percentage, .classification {
+    font-style: italic;
 }
 
 .rule-outputs {
     margin: 1rem;
     padding: 1rem;
     color: #000;
+}
+
+.button {
+    display: inline-block;
+    width: fit-content;
+    background-color: #fff;
+    text-decoration: none;
+    color: #0050ff;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    box-sizing: border-box;
+    border-radius: 1rem;
+
 }
 
 @media screen and (max-width: 768px) {

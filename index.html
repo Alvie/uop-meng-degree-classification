@@ -18,8 +18,8 @@
 			<h1>MEng Computer Science Degree Classifier</h1>
 			<article class="marks-container">
 				<section class="year-marks glass">
-				<h2>Second Year Marks</h2>
-				<div class="module-score">
+					<h2>Second Year Marks</h2>
+					<div class="module-score">
 						<input
 							type="number"
 							name="second-year-percentage"
@@ -225,29 +225,40 @@
 				</section>
 				<section class="rule-outputs glass">
 					<h2>Classification</h2>
-					<p>DISCLAIMER: This tool is not endorsed by the University of Portsmouth.
-						It may not be correct, and could lead to incorrect classification.
-						This tool makes no claim for accuracy, by using it you agree that you are using it at your own risk.
-					If you aren't getting any numbers below, you may have not filled in all the marks.</p>
-					<p>This could be horribly wrong, don't rely on it.</p>
 					<p>
-						Modules are not rounded
+						DISCLAIMER: This tool is not endorsed by the University
+						of Portsmouth. This tool makes no claim for accuracy,
+						use at your own risk.
 					</p>
-					<div class="rule-container">
-							<span class="rule-text">RULE A:</span
-							><span class="rule-a-percentage"></span>
+
+					<a
+						class="button"
+						href="https://github.com/Alvie/uop-meng-degree-classification"
+						>Source Code</a
+					>
+					<a
+						class="button"
+						href="https://policies.docstore.port.ac.uk/policy-107.pdf"
+						>Exam & Assessment Regulations</a
+					>
+					<div class="rules-and-classifications">
+						<p>Ratios - (Second Year : Third Year : Masters Year)</p>
+						<p>After discounting worst 20 credits of each year</p>
+						<div class="rule-container">
+							<span class="rule-text">RULE A - (0 : 50 : 50):</span>
+							<span class="rule-a-percentage"></span>
 						</div>
 						<div class="rule-container">
-							<span class="rule-text">RULE B:</span
-							><span class="rule-b-percentage"></span>
+							<span class="rule-text">RULE B - (20 : 40 : 40):</span>
+							<span class="rule-b-percentage"></span>
 						</div>
 						<div class="classification-container">
-							<span> Classification: </span>
+							<span class="rule-text"> Classification: </span>
 							<span class="classification"></span>
 						</div>
-					</section>
+					</div>
+				</section>
 			</article>
-
 		</main>
 		<script src="index.js"></script>
 	</body>
