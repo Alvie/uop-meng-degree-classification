@@ -16,15 +16,9 @@
 	<body>
 		<main>
 			<h1>MEng Computer Science Degree Classifier</h1>
-			<p>This could be horribly wrong, don't rely on it.</p>
-			<p>
-				Oh, and we don't do rounding of modules or other validations,
-				put it in correctly.
-			</p>
-			<h2>Marks</h2>
 			<article class="marks-container">
-				<section class="year-marks">
-				<h3>Second Year</h3>
+				<section class="year-marks glass">
+				<h2>Second Year Marks</h2>
 				<div class="module-score">
 						<input
 							type="number"
@@ -102,8 +96,8 @@
 						<span> Optional Module </span>
 					</div>
 				</section>
-				<section class="year-marks">
-					<h3>Third Year</h3>
+				<section class="year-marks glass">
+					<h2>Third Year Marks</h2>
 					<div class="module-score">
 						<input
 							type="number"
@@ -138,7 +132,7 @@
 							step="1"
 							placeholder="0 - 100"
 						/>
-						<span> Optional Module </span>
+						<span> Optional Module #1 </span>
 					</div>
 					<div class="module-score">
 						<input
@@ -150,9 +144,9 @@
 							step="1"
 							placeholder="0 - 100"
 						/>
-						<span> Optional Module </span>
+						<span> Optional Module #2 </span>
 					</div>
-					<h4>Project</h4>
+					<h3>Project</h3>
 					<div class="module-score">
 						<input
 							type="number"
@@ -163,11 +157,11 @@
 							step="1"
 							placeholder="0 - 100"
 						/>
-						<span> Individual Project </span>
+						<span> Individual Final Year Project </span>
 					</div>
 				</section>
-				<section class="year-marks">
-					<h3>Masters Year</h3>
+				<section class="year-marks glass">
+					<h2>Masters Year Marks</h2>
 					<div class="module-score">
 						<input
 							type="number"
@@ -229,22 +223,31 @@
 						<span> Industrial Team Project </span>
 					</div>
 				</section>
+				<section class="rule-outputs glass">
+					<h2>Classification</h2>
+					<p>DISCLAIMER: This tool is not endorsed by the University of Portsmouth.
+						It may not be correct, and could lead to incorrect classification.
+						This tool makes no claim for accuracy, by using it you agree that you are using it at your own risk.
+					If you aren't getting any numbers below, you may have not filled in all the marks.</p>
+					<p>This could be horribly wrong, don't rely on it.</p>
+					<p>
+						Modules are not rounded
+					</p>
+					<div class="rule-container">
+							<span class="rule-text">RULE A:</span
+							><span class="rule-a-percentage"></span>
+						</div>
+						<div class="rule-container">
+							<span class="rule-text">RULE B:</span
+							><span class="rule-b-percentage"></span>
+						</div>
+						<div class="classification-container">
+							<span> Classification: </span>
+							<span class="classification"></span>
+						</div>
+					</section>
 			</article>
-			<h2>Classification</h2>
-			<section class="rule-outputs">
-				<div class="rule-container">
-					<span class="rule-text">RULE A:</span
-					><span class="rule-a-percentage"></span>
-				</div>
-				<div class="rule-container">
-					<span class="rule-text">RULE B:</span
-					><span class="rule-b-percentage"></span>
-				</div>
-				<div class="classification-container">
-					<span> Classification: </span>
-					<span class="classification"></span>
-				</div>
-			</section>
+
 		</main>
 		<script src="index.js"></script>
 	</body>
